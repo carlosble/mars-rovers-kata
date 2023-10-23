@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 import rover.Commands;
-import rover.Coordinate;
+import rover.Location;
 import rover.Direction;
 import rover.RoverControlPanel;
 
@@ -15,6 +15,6 @@ public class MarsRoversPanelShould {
 
         control.sendCommands(null, Commands.moveForward);
 
-        assertThat(control.whereIsTheRover()).isEqualTo(Coordinate.create(0, 1));
+        assertThat(control.whereIsTheRover()).isEqualTo(Location.create(0, 1));
     }
 }
